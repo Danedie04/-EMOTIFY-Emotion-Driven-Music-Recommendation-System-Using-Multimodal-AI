@@ -24,13 +24,13 @@ The codebase is built within a highly resilient, modular Python class architectu
 
 
 graph TD
-    **A[Data Ingestion: KaggleHub API] --> B[Data Engineering: Schema Sanitization & Imputation]
-    **B --> C[Feature Engineering: GEMS Scale & Emotional Density Mapping]
-    **C --> D[Unsupervised Layer: KMeans & Ward Hierarchical Tree]
-    **C --> E[Supervised Learning Matrix: Comparative Sweep]
-    **D --> F[Cognitive Layer: HF Text Parsing & Gemini 2.5-flash Strategy Execution]
-    **E --> F
-
+    A[Data Ingestion: KaggleHub API] --> B[Data Engineering: Schema Sanitization & Imputation]
+    B --> C[Feature Engineering: GEMS Scale & Emotional Density Mapping]
+    C --> D[Unsupervised Layer: KMeans & Ward Hierarchical Tree]
+    C --> E[Supervised Learning Matrix: Comparative Sweep]
+    D --> F[Cognitive Layer: HF Text Parsing & Gemini 2.5-flash Strategy Execution]
+    E --> F
+    
 1. **Automated Data Ingestion:** Connects securely to the `kagglehub` API to pull the authoritative Emotify classification dataset (8,407 rows, 17 columns) with localized caching.
 2. **Feature Engineering & Sanitization:** Standardizes matrix column headers, handles missing attributes via automated median imputation, and synthesizes a continuous `emotional_density` vector.
 3. **Unsupervised Clustering Engine:** Applies Spatial KMeans segmentation ($k=4$) alongside a Ward-linkage hierarchical dendrogram mapping to discover structural grouping boundaries across latent musical profiles.
