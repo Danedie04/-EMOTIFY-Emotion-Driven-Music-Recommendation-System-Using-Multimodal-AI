@@ -22,7 +22,7 @@ The **Music Emotion Analytics Pipeline** is an enterprise-grade, object-oriented
 
 The codebase is built within a highly resilient, modular Python class architecture designed to execute end-to-end under a single runtime instantiation:
 
-```mermaid
+
 graph TD
     A[Data Ingestion: KaggleHub API] --> B[Data Engineering: Schema Sanitization & Imputation]
     B --> C[Feature Engineering: GEMS Scale & Emotional Density Mapping]
