@@ -1,25 +1,26 @@
-```markdown
-# Music Emotion Analytics Pipeline
-### Contextual Audio Clustering & Multi-Model Inference for Streaming Platforms
+# 🎵 Music Emotion Analytics Pipeline
+### Contextual Audio Clustering & Multi-Model Inference for Digital Streaming Platforms
 **Project Lead:** Dineshkumar
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Google_Gemini-4285F4?style=for-the-badge&logo=google-gemini&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-yellow?style=for-the-badge)
 
 ---
 
-## 📌 Business & Technical Overview
+## 🎯 Business & Technical Overview
 
-The **Music Emotion Analytics Pipeline** is an enterprise-grade, object-oriented data science framework engineered to bridge the gap between raw track metadata and real-time business intelligence. 
+The **Music Emotion Analytics Pipeline** is an enterprise-grade, object-oriented data science framework engineered to bridge the gap between raw track metadata and real-time business intelligence.
 
-### The Problem
-Digital streaming services face a critical challenge with contextual ad placement: conventional systems deliver advertisements that disrupt user engagement by clashing with the emotional tone of the current track. 
-
-### The Solution
-This pipeline automates the ingestion, sanitization, and mathematical modeling of audio attributes using the Geneva Emotional Music Scales (**GEMS**) framework. By transforming raw tracking points into deterministic emotional signals, streaming applications can dynamically serve contextually aligned B2B advertisements—minimizing bounce rates, optimizing marketing ROI, and maximizing user session retention.
+* **The Challenge:** Digital streaming services face a critical hurdle with contextual ad placement. Traditional ad servers deliver content blindly, causing emotional friction by dropping loud or upbeat advertisements into a listener's calm, ambient, or melancholic playlist.
+* **The Solution:** This pipeline automates the ingestion, sanitization, and mathematical modeling of audio attributes using the Geneva Emotional Music Scales (**GEMS**) framework. By transforming raw tracking points into deterministic emotional signals, streaming applications can dynamically serve contextually aligned B2B advertisements—minimizing user bounce rates, optimizing marketing ROI, and maximizing session retention.
 
 ---
 
 ## 🏗️ Core System Architecture
 
-The codebase is built within a resilient, modular Python class architecture designed to execute end-to-end under a single runtime instantiation:
+The codebase is built within a highly resilient, modular Python class architecture designed to execute end-to-end under a single runtime instantiation:
 
 ```mermaid
 graph TD
@@ -28,9 +29,7 @@ graph TD
     C --> D[Unsupervised Layer: KMeans & Ward Hierarchical Tree]
     C --> E[Supervised Learning Matrix: Comparative Sweep]
     D --> F[Cognitive Layer: HF Text Parsing & Gemini 2.5-flash Strategy Execution]
-    
-
-```
+    E --> F
 
 1. **Automated Data Ingestion:** Connects securely to the `kagglehub` API to pull the authoritative Emotify classification dataset (8,407 rows, 17 columns) with localized caching.
 2. **Feature Engineering & Sanitization:** Standardizes matrix column headers, handles missing attributes via automated median imputation, and synthesizes a continuous `emotional_density` vector.
