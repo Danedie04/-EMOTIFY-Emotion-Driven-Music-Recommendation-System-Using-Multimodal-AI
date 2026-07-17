@@ -128,6 +128,3 @@ python music_pipeline.py
 
 ```
 
-```
-
-```
